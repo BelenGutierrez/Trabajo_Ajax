@@ -1,0 +1,447 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*******************************BODY *********************************************/
+
+body {
+    background: #005ce6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* Standard syntax */ 
+
+   
+    text-align: justify;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    height: 45.4em;
+    margin: 0 auto;
+   
+}
+
+
+#cuerpo {
+    /*background: url("../img/fondo3.jpeg") no-repeat;*/
+    background-size: cover;
+    width: 100%;
+    height: inherit;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.7;
+}
+#container {
+    margin: 0 auto;
+    height: inherit;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+    opacity: 1;
+   
+}
+
+/******************************* HEADER *********************************************/
+
+#header {
+    width: 90%;
+    margin: auto;
+    padding: .5em 0;
+    background: rgba(0, 17, 51, 0.6);
+    text-align: center;
+    color: white;
+    /*text-shadow: black 0.1em 0.1em 0.2em;*/
+}
+
+#header h1, #header h2 {
+    font-size: 2.5em;
+    text-shadow:  1px 1px 0px rgb(179, 204, 255),
+		2px 2px 0px rgb(0, 85, 255),
+		3px 3px 0px rgb(0, 0, 128),
+		5px 5px 0px rgb(0, 0, 51), 
+		10px 10px 20px rgb(0,0,0),
+        6px 6px 2px rgb(255, 255, 255);
+}
+#header h2 {
+    font-size: 1.6em;
+}
+
+/******************************* PRINCIPAL *********************************************/
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #000;
+
+}
+
+#content h2, #content h3, #content h4{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color:#fff;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#content h2{
+  font-size: 1.8em;
+}
+
+.cabeceraExc{
+  position: relative;
+}
+
+hr{
+    color: #fff;
+    background-color: #fff;
+    height: 2px;
+    clear: both;
+}
+
+#excursion {
+   width: 100%;
+   border: 1px solid white;
+}
+
+
+.flex-container{
+		width: 99%;
+		padding: 5px;
+		margin: 10px auto;
+         display: -webkit-flex;
+		display: -ms-flexbox;
+		/*display: inline-flex;*/
+        /*display: flex;*/
+        flex-flow: row wrap;
+        color: #fff;
+        /*box-sizing: border-box;*/
+      
+}
+
+.flex-item{
+		width: 18%;
+		margin: 0px 0px 15px 50px;
+		background-color: rgba(0, 17, 51, 0.4);
+         border-radius: 10%;
+         padding: 0 10px 35px 10px;
+       
+}
+    
+.flex-item img{
+		width: 95%;
+        max-width: 95%;
+         height: auto;
+		border-radius: 10%;
+        margin-top: 10px;
+        border: 2px solid white;
+       /* box-sizing: border-box;*/
+}
+		
+.flex-item p{
+        width: 100%;
+        text-align: center;
+}
+
+.flex-item h3{
+        text-align: center;
+}    
+
+
+
+/******************************* NAV *********************************************/
+
+ .nav{
+   
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    width:4%;
+    padding-left: 1%;
+    position: fixed;
+}
+
+ul li {
+	/*flex-grow:1;*/
+			
+}
+		
+.nav span{
+    background-image: url("../img/redes.png");
+    background-repeat: no-repeat;
+    
+    width: 48px;
+    height: 48px;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    
+    display: block;
+    text-align:center;
+    text-decoration:none;
+    padding: .2em;	
+    border-radius: 50%;
+    
+    -webkit-transition: -webkit-transform 2s; /* Safari */
+    transition: transform 2s;
+    
+}
+
+
+
+#elem1{
+    background-position: 0 0;
+}
+
+#elem2{
+    background-position: 0 -58px;
+}
+
+#elem3{
+    background-position: 0 -116px;
+}
+
+#elem4{
+    background-position: 0 -174px;
+}
+
+#elem1:hover {
+    -webkit-transform: rotateY( 180deg ); /* Safari */
+    transform: rotateY( 180deg );
+    
+}
+
+#elem2:hover {
+   -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+#elem3:hover {
+   
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+#elem4:hover {
+   -webkit-transform: rotateY( 180deg ); /* Safari */
+    transform: rotateY( 180deg );
+}
+
+
+a {
+    color: #429;
+    text-decoration: none;
+}
+
+table{
+    width: 80%; 
+    margin: 20px auto;
+    border: 1px solid white;
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    color: #fff;
+    padding: 20px;
+    font-size: 1em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: 1px solid white;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+
+/******************************* FOOTER *********************************************/
+
+#footer {
+    clear: both;
+    color: white;
+    background-color: #000d33;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 1em 0;
+    margin: auto;
+    width: 100%; 
+}
+
+/*******************************  CLASS  BOTONES VARIOS *********************************************/
+.compra, .detalle, .volver{
+    background-color: #3333ff;
+    color: #fff;
+}
+
+.eliminar{
+    background-color: #ff3333;
+    color: #fff;
+}
+
+.botonera{
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+#adm{
+    font-weight: bold;
+    margin-right: 10px;
+    /*margin-top: 4px;*/
+    padding: 9px;
+    border:1px solid #fff;
+   
+    background: -webkit-repeating-radial-gradient(10% 35%, farthest-side, white, #66ccff, #006699, white); /* Safari 5.1 to 6.0 */
+    background: -o-repeating-radial-gradient(10% 35%, farthest-side, white, #66ccff, #006699, white); /* For Opera 11.6 to 12.0 */
+    background: -moz-repeating-radial-gradient(10% 35%, farthest-side, white, #66ccff, #006699, white); /* For Firefox 3.6 to 15 */
+    background: repeating-radial-gradient(farthest-side at 10% 35%, white, #66ccff, #006699, white); /* Standard syntax (must be last) */
+    border-radius: 20px;
+    color: #000;
+    text-shadow: black 0.2em 0.2em 0.1em;
+    -webkit-transition: background 2s; /* Safari */
+    transition: background 2s;
+}
+
+#adm:hover{
+    background: -webkit-repeating-radial-gradient(10% 35%, farthest-side, white, teal, pink, white); /* Safari 5.1 to 6.0 */
+    background: -o-repeating-radial-gradient(10% 35%, farthest-side, white, teal, pink, white); /* For Opera 11.6 to 12.0 */
+    background: -moz-repeating-radial-gradient(10% 35%, farthest-side, white, teal, pink, white); /* For Firefox 3.6 to 15 */
+    background: repeating-radial-gradient(farthest-side at 10% 35%, white, teal, pink, white); /* Standard syntax (must be last) */
+  
+}
+
+input {
+    padding: 5px;
+	color: black;
+}
+
+
+.news {
+    width: 20%;
+    margin: -35px 5px 0px 0px;
+    text-align: right;
+    float: right;
+}
+
+/*******************************  MEDIA QUERY *********************************************/
+
+
+@media screen and (max-width: 760px){
+    
+  .nav{
+    flex-direction: row;
+    position: relative;
+    padding-left: 4%;
+  }
+  
+  .news{
+    margin: -110px 30px 0px 0px;
+  
+  }
+}
+
+/*******************************  GALERIA *********************************************/
+
+.galeria {
+    background-color: #003333;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 180px;
+    height: 120px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+   
+}
+
+.modal:target {
+  
+    transition: all 0.5s;
+    padding-top: 15px;
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 700px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+/*******************************  VENTANAS MODALES *********************************************/
+
+/*ALTA*/
+
+#alta input, #modificar input {
+	color: black;
+	width: 100%;
+}
